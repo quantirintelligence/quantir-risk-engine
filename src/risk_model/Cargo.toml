@@ -1,0 +1,26 @@
+[package]
+name = "risk_model"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+csv = "1.3"
+log = "0.4"
+env_logger = "0.11"
+rand = "0.8"
+rand_distr = "0.4"
+
+
+# --- Candle (LATEST) ---
+candle-core = { version = "0.9.1" }
+candle-nn   = { version = "0.9.1" }
+
+
+# --- Model (INFER) ---
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors"] }

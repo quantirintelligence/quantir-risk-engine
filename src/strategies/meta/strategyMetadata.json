@@ -1,0 +1,68 @@
+{
+  "BoostOnLargeWhaleShift": {
+    "flag": "WHALE_SHIFT",
+    "title": "Large Whale Position Shift",
+    "summary": "A significant token transfer involving a known whale wallet or mint event was detected.",
+    "why_flagged": "Large transfers associated with high-balance wallets may reflect strategic accumulation, distribution, or treasury-level movement.",
+    "contextual_risk": "Whale-driven movements can precede liquidity rebalancing, market repositioning, or short-term volatility spikes.",
+    "category": "liquidity",
+    "severity": "medium",
+    "base_confidence": 0.75,
+    "impact_vector": ["liquidity", "volatility"]
+  },
+  "BoostOnLiquidityShock": {
+    "flag": "LIQUIDITY_SHOCK",
+    "title": "Protocol Liquidity Movement",
+    "summary": "A large token transfer originating from a protocol-controlled contract was identified.",
+    "why_flagged": "Protocol contracts typically manage treasury funds, liquidity pools, or emission mechanisms. Significant transfers may indicate rebalancing or withdrawal events.",
+    "contextual_risk": "Abrupt liquidity shifts can reduce market depth, alter yield conditions, or precede governance and treasury actions.",
+    "category": "liquidity",
+    "severity": "high",
+    "base_confidence": 0.82,
+    "impact_vector": ["liquidity", "governance", "volatility"]
+  },
+  "FailedTxBurstStrategy": {
+    "flag": "FAILED_TX_BURST",
+    "title": "Burst of Failed Transactions",
+    "summary": "Multiple failed transactions were detected from the same wallet within a short time window.",
+    "why_flagged": "Repeated failures may indicate contract probing, parameter testing, or exploit reconnaissance activity.",
+    "contextual_risk": "Attackers often generate failed calls to observe contract behavior before executing successful exploit attempts.",
+    "category": "attack-pattern",
+    "severity": "high",
+    "base_confidence": 0.88,
+    "impact_vector": ["governance", "volatility"]
+  },
+  "FlaggedMethodsStrategy": {
+    "flag": "FLAGGED_METHOD",
+    "title": "Privileged Contract Method Execution",
+    "summary": "A transaction invoked a method classified as privileged or administratively sensitive.",
+    "why_flagged": "Functions such as ownership transfers, upgrades, or administrative controls provide elevated authority over protocol logic.",
+    "contextual_risk": "Execution of privileged methods may enable contract upgrades, parameter changes, or treasury control adjustments.",
+    "category": "governance",
+    "severity": "critical",
+    "base_confidence": 0.92,
+    "impact_vector": ["liquidity", "governance", "volatility"]
+  },
+  "WhaleLargeTransferStrategy": {
+    "flag": "WHALE_TRANSFER",
+    "title": "Large Whale Transfer",
+    "summary": "A high-volume transfer was initiated by a wallet classified as a whale.",
+    "why_flagged": "Large holders can significantly influence liquidity conditions and short-term market behavior.",
+    "contextual_risk": "Substantial whale transfers may precede liquidity withdrawals, redistribution events, or volatility expansion.",
+    "category": "market-behaviour",
+    "severity": "medium",
+    "base_confidence": 0.78,
+    "impact_vector": ["liquidity", "volatility"]
+  },
+  "OwnerAdminActionStrategy": {
+    "flag": "OWNER_ADMIN_ACTION",
+    "title": "Owner-Only Admin Action",
+    "summary": "An owner wallet executed an administrative contract method.",
+    "why_flagged": "Owner-restricted functions can immediately alter privileged settings and operational controls.",
+    "contextual_risk": "Owner admin actions may change protocol parameters, permissions, or treasury paths with immediate downstream impact.",
+    "category": "governance",
+    "severity": "critical",
+    "base_confidence": 0.9,
+    "impact_vector": ["liquidity", "governance", "volatility"]
+  }
+}

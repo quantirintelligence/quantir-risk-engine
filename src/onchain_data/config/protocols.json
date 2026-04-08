@@ -1,0 +1,195 @@
+{
+  "uniswapv3": {
+    "name": "UniswapV3",
+    "contracts": [
+      "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
+    ],
+    "flaggedMethods": [
+      "approve",
+      "transfer",
+      "owner",
+      "setOwner",
+      "minimumTimeBetweenMints",
+      "mint",
+      "mintCap",
+      "minter",
+      "mintingAllowedAfter",
+      "permit",
+      "setMinter",
+      "transferFrom"
+    ],
+    "adminMethods": [
+      "owner",
+      "setOwner"
+    ],
+    "protocolContracts": [
+      "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
+    ],
+    "whales": [
+      "0x1a9c8182c09f50c8318d769245bea52c32be35bc",
+      "0x000000000000000000000000000000000000dead",
+      "0xf977814e90da44bfa03b6295a0616a897441acec",
+      "0x61cb39bece033c5bda281747db1c15cced2096eb",
+      "0x5069a64bc6616dec1584ee0500b7813a9b680f7e",
+      "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+      "0x36ca0abdf3852f00aee7798c7dfb5ead5d3fec2a",
+      "0x090d4613473dee047c3f2706764f49e0821d256e",
+      "0x6d278351f4a973d1349ef1e54ed37daed0799e19",
+      "0x19d373d0f95f00d368a8d57605af746c4ea9b1d0"
+    ],
+    "owners": [
+      "0x5e74c9f42eed283bff3744fbd1889d398d40867d",
+      "0xf2371551fe3937db7c750f4dfabe5c2fffdcbf5a"
+    ],
+    "networks": [
+      "Ethereum",
+      "Arbitrum"
+    ],
+    "whaleTransferMin": 150000,
+    "liquidityShockAmount": 100000,
+    "txRiskContributionEnabled": true,
+    "tvl": {
+      "symbol": "uni",
+      "source": "defillama",
+      "id": "uniswap-v3",
+      "api": "https://api.llama.fi/protocols"
+    },
+    "network_snapshot": {
+      "provider": "mixed",
+      "llama_api_root": "https://api.llama.fi/protocol",
+      "coingecko_api_root": "https://pro-api.coingecko.com/api/v3",
+      "networks": {
+        "Ethereum": {
+          "enabled": true,
+          "defillama_chain": "Ethereum",
+          "coingecko_onchain_network": "ethereum",
+          "token_address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
+        },
+        "Arbitrum": {
+          "enabled": true,
+          "defillama_chain": "Arbitrum",
+          "coingecko_onchain_network": "arbitrum",
+          "token_address": "0xfa7f8980b0f1e64a2062791cc3b0871572f1f7f0"
+        }
+      }
+    },
+    "whale": {
+      "provider": "coingecko",
+      "network": "eth",
+      "token_address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "api_endpoint_root": "https://pro-api.coingecko.com/api/v3"
+    },
+    "token_health": {
+      "provider": "coingecko",
+      "network": "eth",
+      "token_address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "api_endpoint_root": "https://pro-api.coingecko.com/api/v3"
+    },
+    "metadata": {
+      "generatedBy": "ProtocolConfigBuilder",
+      "generatedAt": "2026-02-24T12:31:23.085Z",
+      "whaleSource": "ethplorer"
+    }
+  },
+  "balancer": {
+    "name": "BalancerV2",
+    "contracts": [
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xba100000625a3754423978a60c9317c58a424e3d"
+    ],
+    "flaggedMethods": [
+      "getPausedState",
+      "hasApprovedRelayer",
+      "setPaused",
+      "DEFAULT_ADMIN_ROLE",
+      "getRoleAdmin",
+      "MINTER_ROLE",
+      "approve",
+      "burn",
+      "burnFrom",
+      "mint",
+      "permit",
+      "transfer",
+      "transferFrom"
+    ],
+    "adminMethods": [
+      "DEFAULT_ADMIN_ROLE",
+      "getRoleAdmin"
+    ],
+    "protocolContracts": [
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xba100000625a3754423978a60c9317c58a424e3d"
+    ],
+    "whales": [
+      "0xba12222222228d8ba445958a75a0704d566bf2c8",
+      "0xc80afd311c9626528de66d86814770361fe92416",
+      "0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43",
+      "0x0efccbb9e2c09ea29551879bd9da32362b32fc89",
+      "0x4e9a9483bdfc66b83ff248754ef2f7035c78aef7",
+      "0xb129f73f1afd3a49c701241f374db17ae63b20eb",
+      "0xff052381092420b7f24cc97fded9c0c17b2cbbb9",
+      "0x2f28cac69f61841d6fe1a01d5bd80ac352ea6d2b",
+      "0xcdcebf1f28678eb4a1478403ba7f34c94f7ddbc5",
+      "0xe8d4d93d9728bd673b0197673a230f62255c7846"
+    ],
+    "owners": [],
+    "networks": [
+      "Ethereum",
+      "Arbitrum",
+      "Base"
+    ],
+    "whaleTransferMin": 150000,
+    "liquidityShockAmount": 100000,
+    "txRiskContributionEnabled": true,
+    "tvl": {
+      "symbol": "bal",
+      "source": "defillama",
+      "id": "balancer-v3",
+      "api": "https://api.llama.fi/protocols"
+    },
+    "network_snapshot": {
+      "provider": "mixed",
+      "llama_api_root": "https://api.llama.fi/protocol",
+      "coingecko_api_root": "https://pro-api.coingecko.com/api/v3",
+      "networks": {
+        "Ethereum": {
+          "enabled": true,
+          "defillama_chain": "Ethereum",
+          "coingecko_onchain_network": "ethereum",
+          "token_address": "0xba100000625a3754423978a60c9317c58a424e3d"
+        },
+        "Arbitrum": {
+          "enabled": true,
+          "defillama_chain": "Arbitrum",
+          "coingecko_onchain_network": "arbitrum",
+          "token_address": "0x040d1edc9569d4bab2d15287dc5a4f10f56a56b8"
+        },
+        "Base": {
+          "enabled": true,
+          "defillama_chain": "Base",
+          "coingecko_onchain_network": "base",
+          "token_address": "0x4158734d47fc9692176b5085e0f52ee0da5d47f1"
+        }
+      }
+    },
+    "whale": {
+      "provider": "coingecko",
+      "network": "eth",
+      "token_address": "0xba100000625a3754423978a60c9317c58a424e3d",
+      "api_endpoint_root": "https://pro-api.coingecko.com/api/v3"
+    },
+    "token_health": {
+      "provider": "coingecko",
+      "network": "eth",
+      "token_address": "0xba100000625a3754423978a60c9317c58a424e3d",
+      "api_endpoint_root": "https://pro-api.coingecko.com/api/v3"
+    },
+    "metadata": {
+      "generatedBy": "ProtocolConfigBuilder",
+      "generatedAt": "2026-02-24T12:32:05.617Z",
+      "whaleSource": "ethplorer"
+    }
+  }
+}

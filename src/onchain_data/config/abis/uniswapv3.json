@@ -1,0 +1,43 @@
+{
+  "protocol": "uniswapv3",
+  "functions": [
+    "function createPool(address tokenA, address tokenB, uint24 fee)",
+    "function enableFeeAmount(uint24 fee, int24 tickSpacing)",
+    "function feeAmountTickSpacing(uint24 arg0)",
+    "function getPool(address arg0, address arg1, uint24 arg2)",
+    "function owner()",
+    "function parameters()",
+    "function setOwner(address _owner)",
+    "function DELEGATION_TYPEHASH()",
+    "function DOMAIN_TYPEHASH()",
+    "function PERMIT_TYPEHASH()",
+    "function allowance(address account, address spender)",
+    "function approve(address spender, uint256 rawAmount)",
+    "function balanceOf(address account)",
+    "function checkpoints(address arg0, uint32 arg1)",
+    "function decimals()",
+    "function delegate(address delegatee)",
+    "function delegateBySig(address delegatee, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s)",
+    "function delegates(address arg0)",
+    "function getCurrentVotes(address account)",
+    "function getPriorVotes(address account, uint256 blockNumber)",
+    "function minimumTimeBetweenMints()",
+    "function mint(address dst, uint256 rawAmount)",
+    "function mintCap()",
+    "function minter()",
+    "function mintingAllowedAfter()",
+    "function name()",
+    "function nonces(address arg0)",
+    "function numCheckpoints(address arg0)",
+    "function permit(address owner, address spender, uint256 rawAmount, uint256 deadline, uint8 v, bytes32 r, bytes32 s)",
+    "function setMinter(address minter_)",
+    "function symbol()",
+    "function totalSupply()",
+    "function transfer(address dst, uint256 rawAmount)",
+    "function transferFrom(address src, address dst, uint256 rawAmount)"
+  ],
+  "events": [
+    "event Transfer(address indexed from, address indexed to, uint256 amount)"
+  ],
+  "updatedAt": "2026-04-06T20:51:48.562Z"
+}
