@@ -30,19 +30,6 @@ Debug test run (without DB writes):
 npm run offchain:news:test
 ```
 
-## Required env vars
-
-- `MONGODB_URI` (or `MONGO_URI`)
-- `MONGODB_DB` (optional)
-
-By default worker loads env defaults from project root:
-
-- `/Users/pc/Desktop/github/defi-risk-engine-grants-public/.env`
-
-CLI override:
-
-- `--env-file <path>`
-
 ## Worker config
 
 `config/protocol_news_worker.json` controls runtime behavior:

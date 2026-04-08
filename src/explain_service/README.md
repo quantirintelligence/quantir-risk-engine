@@ -563,28 +563,6 @@ Methods:
 
 This repository is intentionally simple. The main business logic lives in the service layer, not in the database wrapper.
 
-## Environment Variables
-
-### Core service
-
-- `EXPLAIN_HOST`
-- `EXPLAIN_PORT`
-- `MONGODB_URI`
-- `MONGO_URI`
-- `MONGODB_DB`
-- `MONGO_DB`
-
-### Hypotheses and timing
-
-- `EXPLAIN_HYPOTHESIS_POOL`
-- `EXPLAIN_PROVIDER_TIMEOUT_MS`
-- `EXPLAIN_AUTO_COOLDOWN_HOURS`
-- `EXPLAIN_MANUAL_COOLDOWN_HOURS`
-
-### Cross-provider debug
-
-- `EXPLAIN_DEBUG_PROVIDERS`
-
 ## Failure Modes
 
 ### Active job already exists

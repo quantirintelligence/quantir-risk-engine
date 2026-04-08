@@ -179,35 +179,6 @@ This behavior is controlled by `CONTRACT_AUDIT_WRITE_FILES`.
 
 In production, file writes are disabled by default unless explicitly enabled.
 
-## Environment Variables
-
-### Core flags
-
-- `CONTRACT_AUDIT_ENABLED`
-  - disables the module when set to `0`
-- `CONTRACT_AUDIT_FORCE_REFRESH`
-  - forces regeneration even if a completed stored audit exists
-- `CONTRACT_AUDIT_WRITE_FILES`
-  - controls whether config and ABI artifacts are written to disk
-
-### LLM settings
-
-- `CONTRACT_AUDIT_MODEL`
-  - defaults to `gpt-4.1-mini`
-- `CONTRACT_AUDIT_TIMEOUT_MS`
-
-### Size and scope limits
-
-- `CONTRACT_AUDIT_MAX_CONTRACTS`
-- `CONTRACT_AUDIT_SOURCE_CHAR_BUDGET`
-- `CONTRACT_AUDIT_MAX_ABI_FRAGMENTS`
-
-### API access
-
-- `OPENAI_API_KEY`
-- `OPENAI_BASE_URL`
-- `ETHERSCAN_API_KEY`
-
 ## LLM Request Contract
 
 The module asks the model to return JSON with:

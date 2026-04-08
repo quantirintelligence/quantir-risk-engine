@@ -19,14 +19,6 @@ uvicorn app:app --host 0.0.0.0 --port 8000
 
 `requirements.txt` pins CPU-only PyTorch (`torch==2.5.1+cpu`) to avoid downloading CUDA runtime packages in non-GPU environments.
 
-## Environment variables
-
-- `CHRONOS_MODEL_NAME` (default: `amazon/chronos-t5-small`)
-- `CHRONOS_DEVICE` (default: `cpu`)
-- `CHRONOS_DTYPE` (default: `float32`)
-- `CHRONOS_NUM_SAMPLES` (default: `64`)
-- `PREDICTOR_LOG_LEVEL` (default: `INFO`)
-
 ## Endpoints
 
 - `GET /health`

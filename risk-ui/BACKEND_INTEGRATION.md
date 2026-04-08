@@ -157,11 +157,6 @@ This file documents all frontend interface points where backend data is consumed
       - all keys with `risk-ui:` prefix
     - Keeps `risk-theme`
 
-## 9) Environment variables
-
-- `NEXT_PUBLIC_API_BASE_URL` (used by all REST helpers)
-- `NEXT_PUBLIC_ALERTS_WS_URL` (optional, explicit alerts websocket URL)
-
 ## 10) Quick wiring checklist
 
 1. Set `NEXT_PUBLIC_API_BASE_URL` in your env.

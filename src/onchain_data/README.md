@@ -138,30 +138,6 @@ That is why risk and forecast can differ by network even when price candles rema
 - `utils/logger.js`
   - engine logger
 
-## Environment
-
-Common engine variables:
-
-- `MONGODB_URI`
-- `MONGODB_DB`
-- `ALCHEMY_WS_URL`
-- `COINGECKO_KEY`
-- `RISK_MODEL_URL`
-- `FORECAST_URL`
-- `EXPLAIN_SERVICE_URL`
-- `WS_TOKEN_SECRET` or `AUTH_SECRET`
-- `PROTOCOLS_CONFIG_PATH`
-  optional runtime override for `protocols.json`; container builds default to `/app/config/protocols.json`
-
-Control flags used by the runtime include:
-
-- `COLLECTOR_INTERVAL_MS`
-- `COLLECTOR_CONCURRENCY`
-- `TX_MONITOR_MAX_PROTOCOLS`
-- `TX_MONITOR_PENDING`
-- `EXPLAIN_RULE_THRESHOLD`
-- `EXPLAIN_BOOTSTRAP_ON_START`
-
 ## Failure Modes
 
 - if Mongo is unavailable, the engine fails at startup

@@ -85,35 +85,6 @@ The API primarily reads from Mongo collections populated outside this service:
 4. The frontend consumes those payloads through `risk-ui`.
 5. For realtime alerts, the frontend requests `POST /api/ws/token` and then connects to the websocket server exposed by the engine.
 
-## Environment
-
-Common required variables:
-
-- `MONGODB_URI`
-- `AUTH_SECRET`
-- `EXPLAIN_SERVICE_URL`
-- `GOOGLE_CLIENT_ID`
-- `GOOGLE_CLIENT_SECRET`
-
-Feature-specific variables:
-
-- `WS_TOKEN_SECRET`
-- `NEXTAUTH_URL`
-- `AUTH_ALLOWED_REDIRECT_ORIGINS`
-- `CORS_ALLOWED_ORIGINS`
-- `TELEGRAM_LINK_API_SECRET`
-- `TELEGRAM_BOT_USERNAME`
-
-## Local Run
-
-```bash
-cd api
-npm install
-npm run dev
-```
-
-The service expects Mongo to be available and becomes more useful when the engine, explain-service, and ingestion workers are also running.
-
 ## Notes For Docs Portal
 
 - This service already has a stable set of route files, but it still lacks a public-facing API reference.

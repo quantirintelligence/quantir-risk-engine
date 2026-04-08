@@ -77,18 +77,6 @@ node src/config_builder/ProtocolConfigBuilder.js --slug curve --name CurveFinanc
 - `--whale-providers` optional, whale provider order as CSV
 - `--out` optional, output JSON path (default `src/onchain_data/config/protocols.json`)
 
-## .env
-
-The script automatically reads `.env` from project root.
-
-Supported variables:
-
-- `ETHERSCAN_API_KEY`
-- `COINGECKO_KEY`
-- `ETHPLORER_API_KEY` (falls back to `freekey` if missing)
-- `MORALIS_API_KEY` (optional)
-- `ALCHEMY_WS_URL` or `ETH_RPC_URL` (used for `owner()/admin()` via `eth_call`)
-
 ## Data Sources (Current Architecture)
 
 - ABI/source: Etherscan-like API (V2 for ETH), fallback Blockscout

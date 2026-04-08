@@ -33,27 +33,6 @@ uvicorn app:app --host 0.0.0.0 --port 8000
 npm run forecast:service
 ```
 
-## Required env
-
-- `MONGODB_URI` (or `MONGO_URI`)
-- `MONGODB_DB` (optional)
-- `CHRONOS_ENDPOINT_URL` (default: `http://127.0.0.1:8000/invocations`)
-
-## Optional env
-
-- `CHRONOS_MODEL_NAME` (default: `amazon/chronos-t5-small`)
-- `CHRONOS_TIMEOUT_MS` (default: `25000`)
-- `CHRONOS_QUANTILES` (default: `0.1,0.5,0.9`)
-- `FORECAST_PORT` (default: `8095`)
-- `FORECAST_HOST` (default: `0.0.0.0`)
-- `FORECAST_DEFAULT_INTERVAL` (`15m` or `1h`, default: `15m`)
-- `FORECAST_DEFAULT_HORIZON` (clamped to 2..4)
-- `FORECAST_MAX_HORIZON` (clamped to 2..4)
-- `FORECAST_LOOKBACK_POINTS` (default: `256`)
-- `FORECAST_MIN_CONTEXT_POINTS` (default: `24`)
-- `FORECAST_STORE_FEATURES` (`true/false`, default: `true`)
-- `FORECAST_STORE_PREDICTIONS` (`true/false`, default: `true`)
-
 ## What data goes into Chronos
 
 Per protocol and interval, Node builds 5 numeric series in chronological order:
